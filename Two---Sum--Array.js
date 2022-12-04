@@ -1,5 +1,5 @@
 //************************************************************************************************************************* */
-// Given an array of integers nums and an integer target, return indices of the two numbers such that they add up to target.//
+// Given an array of integers arr and an integer target, return indices of the two numbers such that they add up to target.//
 //************************************************************************************************************************* */
 
 let arr = [1, 5, 7, 9, 6, 3, 8, 2];
