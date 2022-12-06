@@ -1,0 +1,31 @@
+* {
+  box-sizing: border-box;
+}
+body {
+}
+
+.container {
+  width: 500px;
+  height: 600px;
+
+  text-align: center;
+  border-radius: 15px;
+  padding: 15px;
+  font-size: 2rem;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  box-shadow: 0 0 14px #00000029;
+}
+.input {
+  width: 100%;
+  display: block;
+  height: 50px;
+  margin-bottom: 30px;
+}
+button {
+  width: 100px;
+  height: 35px;
+  margin: 5px;
+}
