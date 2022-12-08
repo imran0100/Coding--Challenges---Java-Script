@@ -15,17 +15,25 @@
 // Input: prices = [7,6,4,3,1]
 // Output: 0
 // Explanation: In this case, no transactions are done and the max profit = 0.
-prices = [7, 6, 4, 3, 1, 5];
-var maxProfit = function (prices) {
-  let maxProfit = 0,
-    minPrice = Infinity;
-  for (let price of prices) {
-    minPrice = Math.min(price, minPrice);
-    let profit = price - minPrice;
-    maxProfit = Math.max(profit, maxProfit);
-  }
+// prices = [7, 6, 4, 3, 1, 5];
+// var maxProfit = function (prices) {
+//   let maxProfit = 0,
+//     minPrice = Infinity;
+//   for (let price of prices) {
+//     minPrice = Math.min(price, minPrice);
+//     let profit = price - minPrice;
+//     maxProfit = Math.max(profit, maxProfit);
+//   }
 
-  return maxProfit;
-};
-let y = maxProfit(prices);
-console.log(y);
+//   return maxProfit;
+// };
+// let y = maxProfit(prices);
+// console.log(y);
+nums = [7, 6, 6, 6, 7];
+let obj = {};
+for (let ele of nums) {
+  obj[ele] = obj[ele] + 1 || 1;
+}
+max = Math.max.apply(null, Object.values(obj));
+// return max;
+console.log(max);
