@@ -1,0 +1,37 @@
+* {
+  box-sizing: border-box;
+}
+.container {
+  height: 100vh;
+  width: 1000px;
+  background-color: red;
+  margin: 0 auto;
+  padding: 100px;
+  position: relative;
+}
+.app {
+  text-align: center;
+  background-color: white;
+  height: 75%;
+  width: 80%;
+  padding: 50px;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+}
+button {
+  margin-top: 120px;
+  width: 220px;
+  height: 65px;
+  font-size: 50px;
+  background-color: blue;
+  position: absolute;
+  left: 38%;
+  top: 61%;
+}
+
+.disp-joke {
+  margin-top: 122px;
+  font-size: 2rem;
+}
