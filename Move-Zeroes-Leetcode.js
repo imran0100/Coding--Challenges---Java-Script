@@ -8,10 +8,9 @@
 
 let nums = [7, 0, 4, 5, 6];
 
-// for (let i of nums) {
-//   if (nums[i] === 0) {
-//     nums.push(Number(nums.splice(i, 1).join()));
-//   }
-// }
-// console.log(nums);
+for (let i of nums) {
+  if (nums[i] === 0) {
+    nums.push(Number(nums.splice(i, 1).join()));
+  }
+}
 console.log(Math.max(a, b));
