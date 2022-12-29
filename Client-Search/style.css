@@ -6,15 +6,17 @@
   margin: 0 auto;
   width: 400px;
   height: 550px;
-  background-color: red;
+  background-color: rgb(238, 238, 238);
+  margin-top: 50px;
 }
 input {
   width: 250px;
   height: 35px;
   margin-bottom: 30px;
 }
-.container div {
-  background-color: green;
+.disDataDom div {
+  background-color: rgb(255, 255, 255);
   height: 40px;
-  border: solid 1px red;
+  border: solid 1px rgb(7, 7, 7);
+  padding: 3px;
 }
