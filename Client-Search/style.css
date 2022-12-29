@@ -1,0 +1,20 @@
+* {
+  box-sizing: border-box;
+}
+.container {
+  padding: 15px;
+  margin: 0 auto;
+  width: 400px;
+  height: 550px;
+  background-color: red;
+}
+input {
+  width: 250px;
+  height: 35px;
+  margin-bottom: 30px;
+}
+.container div {
+  background-color: green;
+  height: 40px;
+  border: solid 1px red;
+}
