@@ -14,17 +14,22 @@
 // Explanation: 1 is in the array but 2 is missing.
 // Example 3:
 
-Input: nums = [7, 8, 9, 11, 12];
+// Input: nums = [7,8,9,11,12]
 // Output: 1
 // Explanation: The smallest positive integer 1 is missing.
 
-let posNums = nums.filter((num) => num > 0);
-let smallestMissing = 1;
-let maxNum = Math.max(...posNums);
-let numSet = new Set(posNums);
-while (smallestMissing <= maxNum) {
-  // if(!posNums.includes(smallestMissing)) return smallestMissing
-  if (!numSet.has(smallestMissing)) return smallestMissing;
-  smallestMissing++;
-}
-return smallestMissing;
+nums = [7, 8, 9, 11, 12];
+
+const firstMissingPositive = (nums) => {
+  let posNums = nums.filter((num) => num > 0);
+  let smallestMissing = 1;
+  let maxNum = Math.max(...posNums);
+  let numSet = new Set(posNums);
+  while (smallestMissing <= maxNum) {
+    // if(!posNums.includes(smallestMissing)) return smallestMissing
+    if (!numSet.has(smallestMissing)) return smallestMissing;
+    smallestMissing++;
+  }
+
+  return smallestMissing;
+};
