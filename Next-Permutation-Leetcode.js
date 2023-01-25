@@ -42,9 +42,3 @@ var nextPermutation = function (nums) {
   }
   return nums;
 };
-let n = [1, 2, 3];
-let n1 = [3, 2, 1];
-let n2 = [1, 1, 5];
-console.log(nextPermutation(n));
-console.log(nextPermutation(n1));
-console.log(nextPermutation(n2));
