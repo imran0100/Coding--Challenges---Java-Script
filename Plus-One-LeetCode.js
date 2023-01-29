@@ -23,3 +23,7 @@
 // Explanation: The array represents the integer 9.
 // Incrementing by one gives 9 + 1 = 10.
 // Thus, the result should be [1,0]
+
+var plusOne = function (digits) {
+  return (BigInt(digits.join("")) + BigInt(1)).toString().split("");
+};
