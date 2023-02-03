@@ -16,3 +16,8 @@
 
 // Input: nums = [], target = 0
 // Output: [-1,-1]
+
+const searchRange = (nums, target) => [
+  nums.indexOf(target),
+  nums.lastIndexOf(target),
+];
