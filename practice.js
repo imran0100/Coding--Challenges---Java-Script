@@ -12,9 +12,5 @@
 // let x = ac.call(obj, "hello");
 // console.log(x);
 
-function ac(message) {
-  return "hii" + message + this.name;
-}
-let obj = { name: "rahul" };
-let x = ac.apply(obj, ["helo"]);
-console.log(x);
+let str = ["ih", "jjk"];
+console.log(str.join(" ").sp);
