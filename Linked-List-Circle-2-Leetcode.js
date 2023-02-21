@@ -12,3 +12,21 @@
 // Input: head = [1,2], pos = 0
 // Output: tail connects to node index 0
 // Explanation: There is a cycle in the linked list, where tail connects to the first node.
+
+var detectCycle = function (head) {
+  let slow = head,
+    fast = head;
+  if (!fast || !fast.next || !fast.next.next) return null;
+  while (fast && fast.next && fast.next.next) {
+    slow = slow.next;
+    fast = fast.next.next;
+    if (slow === fast) break;
+  }
+  let p1 = head,
+    p2 = slow;
+  while (p1 && p2 && p1 !== p2) {
+    p1 = p1.next;
+    p2 = p2.next;
+  }
+  return p2;
+};
