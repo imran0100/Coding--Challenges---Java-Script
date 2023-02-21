@@ -12,5 +12,11 @@
 // let x = ac.call(obj, "hello");
 // console.log(x);
 
-let str = ["ih", "jjk"];
-console.log(str.join(" ").sp);
+const closur = () => {
+  let num = 2;
+  return function inner() {
+    console.log(num);
+  };
+};
+let res = closur();
+res();
